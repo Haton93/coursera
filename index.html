@@ -1,7 +1,8 @@
+<! DOCTYPE html>
 <html>
 <head>
     <title>Box</title>
-    <meta charset="utf-8">
+    <meta  charset="utf-8">
     <style>
         *{
             /* for browser defult */
@@ -10,7 +11,7 @@
             padding: 0;
         }
 
-        body {
+        b.body {
             background-color: white;
             font-family: Serif;
         }
@@ -18,76 +19,85 @@
         h1.text {
             color: black;
             text-align: center;
-            margin: 30px;
-            margin-bottom: 1px;
-
+            margin: 20px;
         }
 
         /*for the small box */
-        div#container {
+        div.container {
 
-            text-align: right;
-            float: left;
-            padding: 92px;
-            display: flex;
-            position: absolute;
+
+
+
         }
 
 
         #p1 {
+
             background-color: lightpink;
+            width:95px;
+            height: 40;
             border: 2px solid black;
             padding: 7px;
-            margin-left: 401px;
             font-weight:bold;
             font-size: 20px;
+            text-align: left;
             color: black;
-            width: 95px;
-            height: 40px;
+            margin-left: 459px;
             text-align: center;
+            position:relative;
 
         }
-
         #p2 {
-            background-color: darkred;
+            border-collapse: collapse;
+            border-spacing: 100px;
+            background-color: lightblue;
+            width:95px;
+            height: 40;
             border: 2px solid black;
             padding: 7px;
-            margin-left: 585px;
             font-weight:bold;
             font-size: 20px;
-            color: white;
-            width: 95px;
-            height: 40px;
+            text-align: left;
+            color: black;
+            margin-left: 459px;
+            float: left;
             text-align: center;
+            position:relative;
+
+
         }
 
         #p3 {
-            background-color: lightgoldenrodyellow;
+            border-collapse: collapse;
+            border-spacing: 100px;
+            background-color: lightyellow;
+            width:95px;
+            height: 40;
             border: 2px solid black;
             padding: 7px;
-            margin-left: 585px;
             font-weight:bold;
             font-size: 20px;
+            text-align: left;
             color: black;
-            width: 95px;
-            height: 40px;
+            margin-left: 459px;
             text-align: center;
+            flex-wrap: nowrap;
+            position:relative;
 
 
         }
 
+        #table1 {
 
-        div.table1 {
-            border-collapse: separate;
-            border-spacing: 100px;
             background-color: lightgray;
-            width: 500px;
+            width: 600px;
             height: 150;
             border: 4px solid black;
-            padding: 45px;
-            margin: 90px;
-            text-align: left;
+            padding: 40px;
+            margin-top: 20px;
+            margin-left: 50px;
             float: left;
+            text-align: left;
         }
 
 
@@ -99,23 +109,21 @@
 
 <h1 class="text"> Our Menu </h1>
 
-<div id="container">
-    <p id="p1">Chicken</p>
-    <p id="p2">Beef</p>
-    <p id="p3">Sushi</p>
+<div class="container">
+
+    <div id="table1"  >
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div style = "position:relative; left:1px; top:-96px;"><p id="p1" >Chicken</p></div></div>
+
+    <div id="table1"  >
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div style = "position:relative; left:1px; top:-96px;"><p id="p2" >Beef</p></div></div>
+
+    <div id="table1"  >
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div style = "position:relative; left:1px; top:-96px;"><p id="p3" >Sushi</p></div></div>
+
 </div>
-
-
-<div class="table1">
-    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-
-
-<div class="table1">
-    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-
-
-<div class="table1">
-    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 
 
 </body>
